@@ -54,22 +54,21 @@
         </div>
 
         <main id="form">
-            <form action="#" class="form">
+            <form name="contact" method="POST" data-netlify="true" class="form">
                 <label class="field">
-                    Name
-                    <input type="text" id="name" />
+                    En Name:
+                    <input type="text" name="name" id="name" />
+                </label>
+                <label class="field">
+                    En Email:
+                    <input type="email" name="email" id="long-field" />
                 </label>
 
                 <label class="field">
-                    A longer field
-                    <input type="text" id="long-field" />
+                    Message:
+                    <textarea name="message" id="textarea"></textarea>
                 </label>
-
-                <label class="field">
-                    Message
-                    <textarea id="textarea"></textarea>
-                </label>
-                <button>Send</button>
+                <button type="submit">Send</button>
             </form>
         </main>
 
