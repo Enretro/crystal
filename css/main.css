@@ -4,29 +4,34 @@
       rgba(255, 255, 255, 1) 50%,
       rgba(76, 199, 237, 1) 100%);
 
-  --ff-body: "PT Sans", sans-serif;
-  --ff-heading: "PT Sans Narrow", sans-serif;
-
-  --fw-normal: 300;
-  --fw-bold: 700;
-
-  --clr-primary-100: #91e5f6;
-  --clr-primary-200: #84d2f6;
-  --clr-primary-300: #59a5d8;
-  --clr-primary-400: #386fa4;
-  --clr-primary-500: #133c55;
-
-  --clr-accent: #68271e;
-
-  --clr-light: #fff;
-  --clr-dark: #000;
-
+  --en-light: #fff;
+  --enr-dark: #000;
 
   --en-txt: #3d6cb9;
 
   --en-f: #00d1ff;
   --en-g: #00fff0;
   --en-h: #fafaf6;
+  --en-i: #088816;
+  --en-k: #8A7878;
+
+  --en-lime: #01FF70;
+  --en-green: #2ECC40;
+  --en-silver: #DDDDDD;
+  --en-gold: #FFDC00;
+  --en-navy: #001f3f;
+  --en-blue: #0074D9;
+  --en-aqua: #7FDBFF;
+  --en-teal: #39CCCC;
+
+  --ff-ena: 'Josefin Sans', sans-serif;
+  --ff-enb: 'Marck Script', cursive;
+  --ff-enc: 'Montserrat Alternates', sans-serif;
+  --ff-en1: 'Open Sans', sans-serif;
+  --ff-en2: 'Lato', sans-serif;
+  --ff-en3: 'Montserrat', sans-serif;
+  --ff-en4: 'Oswald', sans-serif;
+  --ff-en5: 'Raleway', sans-serif;
 
 
   --main-margin: 5vh;
@@ -42,14 +47,12 @@
 
 body {
   background: var(--bg-lg01);
-  font-family: var(--ff-body);
+  font-family: var(--ff-en1);
 }
 
 ul li {
   list-style: none;
 }
-
-
 
 /* --- GRID LAYOUT --- */
 .container {
@@ -65,7 +68,6 @@ ul li {
   grid-gap: 1rem;
   padding: 1em;
   margin: var(--main-margin);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1rem;
   color: var(--en-txt);
   text-align: center;
@@ -76,7 +78,8 @@ header {
   grid-area: hed;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  text-transform: uppercase;
+  font-family: var(--ff-en3);
+
 }
 
 .nav-bar {
@@ -84,29 +87,42 @@ header {
   background: var(--en-h);
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: var(--ff-ena);
+  font-weight: 900;
+
+}
+
+aside {
+  display: grid;
+  writing-mode: vertical-lr;
+  justify-content: center;
+  align-items: center;
+  background: var(--en-h);
+  grid-area: sid;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  text-transform: capitalize;
+  font-family: var(--ff-ena);
+  font-size: 3rem;
+  font-weight: 800;
+
 }
 
 section {
-  background: var(--en-);
   grid-area: sec;
   border-radius: var(--main-radius);
   display: grid;
   justify-content: center;
   align-items: center;
   grid-gap: 0;
-}
-
-#sidebar {
-  background: var(--en-h);
-  grid-area: sid;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: var(--ff-ena);
+  font-weight: 800;
+  color: var(--en-k);
 }
 
 main {
-  background: var(--en-);
   grid-area: man;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -116,6 +132,9 @@ footer {
   grid-area: fut;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  font-weight: 800;
+  text-transform: capitalize;
+  font-family: var(--en-a);
 }
 
 
@@ -132,13 +151,13 @@ ul {
 ul li a {
   color: var(--en-txt);
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 ul li a:hover {
-  color: #fff;
+  color: var(--en-k);
+  text-transform: full-size-kana;
   text-decoration: underline;
-  text-transform: capitalize;
+
 }
 
 /* --- GALLERY SECTION --- */
@@ -185,8 +204,7 @@ ul li a:hover {
 }
 
 .gallery-img a {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--ff-en3);
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
@@ -204,18 +222,21 @@ ul li a:hover {
 .ft-legal {
   padding-top: 1.7rem;
   font-size: .7rem;
-  font-weight: var(--fw-normal);
-  text-transform: capitalize;
-
+  font-family: var(--ff-ena);
+  font-weight: 800;
+  color: var(--en-k);
+  margin-bottom: var(--main-margin);
 }
 
 .fab {
-  color: var(--en-txt);
+  color: var(--en-k);
 }
 
 .fab:hover {
-  color: var(--en-h);
+  color: var(--en-txt);
+  text-decoration: underline;
 }
+
 
 
 
@@ -224,7 +245,7 @@ ul li a:hover {
 @media only screen and (max-width: 560px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr auto auto 2.6fr 1fr;
+    grid-template-rows: 0.4fr 0.4fr auto minmax(600px, 1fr) autor .7fr;
     grid-template-areas:
       "hed"
       "nav"
@@ -235,6 +256,11 @@ ul li a:hover {
     font-size: .8rem;
     font-weight: 600;
     margin: 0 auto;
+  }
+
+  aside {
+    writing-mode: horizontal-tb;
+    font-size: 1rem;
   }
 
   #gallery {
