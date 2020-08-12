@@ -50,6 +50,10 @@ body {
   font-family: var(--ff-en1);
 }
 
+h1 {
+  text-transform: capitalize;
+}
+
 ul li {
   list-style: none;
 }
@@ -245,7 +249,7 @@ ul li a:hover {
 @media only screen and (max-width: 560px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr auto minmax(600px, 1fr) autor .7fr;
+    grid-template-rows: 0.4fr 0.4fr auto minmax(600px, 1fr) auto .7fr;
     grid-template-areas:
       "hed"
       "nav"

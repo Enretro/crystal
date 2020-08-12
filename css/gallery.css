@@ -50,9 +50,14 @@ body {
     font-family: var(--ff-en1);
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 ul li {
     list-style: none;
 }
+
 
 /* --- GRID LAYOUT --- */
 .container {
@@ -62,9 +67,9 @@ ul li {
     grid-template-rows: 0.2fr 1.7fr 1.2fr 0.8fr;
     grid-template-areas:
         "hed nav nav nav"
-        "sid sec sec sec"
-        "sid man man man"
-        "sid fut fut fut";
+        "sec sec sec sec"
+        "man man man man"
+        "fut fut fut fut";
     grid-gap: 1rem;
     padding: 1em;
     margin: var(--main-margin);
@@ -93,26 +98,10 @@ header {
 
 }
 
-/*
-aside {
-  display: grid;
-  writing-mode: vertical-lr;
-  justify-content: center;
-  align-items: center;
-  background: var(--en-h);
-  grid-area: sid;
-  border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
-  text-transform: capitalize;
-  font-family: var(--ff-ena);
-  font-size: 3rem;
-  font-weight: 800;
-}
-*/
-
 section {
     grid-area: sec;
     border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
     display: grid;
     justify-content: center;
     align-items: center;
@@ -126,7 +115,7 @@ section {
 main {
     grid-area: man;
     border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+    padding-top: 20px;
 }
 
 footer {
@@ -159,8 +148,7 @@ ul li a:hover {
 
 }
 
-/* --- MAIN SECTION --- */
-
+/* --- MAIN SECTION CAROUSEL--- */
 
 .carousel {
     height: 400px;
@@ -176,18 +164,19 @@ ul li a:hover {
     width: 100%;
 }
 
-.carousel-item h3g {
+.carousel-item h3 {
     margin: 0;
     padding: 0;
     background: #fff;
     color: #000;
     box-sizing: border-box;
     padding: 10px 5px;
-    font-size: 1.7em;
+    font-size: 1.3em;
     font-weight: bold;
     text-align: center;
 
 }
+
 
 /* --- FOOTER SECTION --- */
 /* Sticks footer to bottom */
@@ -218,23 +207,18 @@ ul li a:hover {
 @media only screen and (max-width: 560px) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr auto minmax(600px, 1fr) autor .7fr;
+        grid-template-rows: 0.3fr 0.4fr 0.5fr minmax(300px, 1fr) 0.7fr;
         grid-template-areas:
             "hed"
             "nav"
             "sec"
             "man"
-            "sid"
             "fut";
         font-size: .8rem;
         font-weight: 600;
         margin: 0 auto;
     }
 
-    aside {
-        writing-mode: horizontal-tb;
-        font-size: 1rem;
-    }
 
 }
 
