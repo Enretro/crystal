@@ -91,7 +91,6 @@ header {
     grid-area: nav;
     background: var(--en-h);
     border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
     text-transform: capitalize;
     font-family: var(--ff-ena);
     font-weight: 900;
@@ -101,12 +100,12 @@ header {
 section {
     grid-area: sec;
     border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
     display: grid;
     justify-content: center;
     align-items: center;
     grid-gap: 0;
     text-transform: capitalize;
+    font-size: 3rem;
     font-family: var(--ff-ena);
     font-weight: 800;
     color: var(--en-k);
@@ -115,13 +114,15 @@ section {
 main {
     grid-area: man;
     border-radius: var(--main-radius);
-    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 footer {
     grid-area: fut;
     border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
     font-weight: 800;
     text-transform: capitalize;
     font-family: var(--en-a);
@@ -148,34 +149,22 @@ ul li a:hover {
 
 }
 
-/* --- MAIN SECTION CAROUSEL--- */
+/* --- MAIN SECTION SLICK --- */
 
-.carousel {
-    height: 400px;
-    perspective: 500px;
-    transform: translateY(-100px);
-}
-
-.carousel-item {
-    width: 300px;
-}
-
-.carousel-item img {
+.swiper-container {
     width: 100%;
+
+    padding-bottom: 70px;
 }
 
-.carousel-item h3 {
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    color: #000;
-    box-sizing: border-box;
-    padding: 10px 5px;
-    font-size: 1.3em;
-    font-weight: bold;
-    text-align: center;
-
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
 }
+
 
 
 /* --- FOOTER SECTION --- */
@@ -186,7 +175,7 @@ ul li a:hover {
     font-size: .7rem;
     font-family: var(--ff-ena);
     font-weight: 800;
-    color: var(--en-k);
+    color: var(--en-txt);
     margin-bottom: var(--main-margin);
 }
 
