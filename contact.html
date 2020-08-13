@@ -59,22 +59,22 @@
         <main id="form">
             <form name="contact" method="POST" data-netlify="true" class="form">
                 <label class="field">
-                    En Name:
+                    Name:
                     <input type="text" name="name" id="name" />
                 </label>
                 <label class="field">
-                    En Email:
+                    Email:
                     <input type="email" name="email" id="long-field" />
                 </label>
 
-                <label class="field">En Role: <select name="role[]" multiple>
+                <label class="field">Role: <select name="role[]" multiple>
                         <option value="leader">Leader</option>
                         <option value="follower">Follower</option>
                     </select>
                 </label>
 
                 <label class="field">
-                    Message:
+                    Pišite nam:
                     <textarea name="message" id="textarea"></textarea>
                 </label>
 
@@ -82,11 +82,11 @@
                     <input type="file" name="myfile" id="myfile" placeholder="Upload File" />
                 </label>
 
-                <div class="field">
+                <label class="field">
                     <div data-netlify-recaptcha="true"></div>
-                </div>
+                </label>
 
-                <button type="submit">Send</button>
+                <button type="submit">Pošlji</button>
             </form>
         </main>
         <footer>
