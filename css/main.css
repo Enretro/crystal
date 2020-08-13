@@ -50,10 +50,6 @@ body {
   font-family: var(--ff-en1);
 }
 
-h1 {
-  text-transform: capitalize;
-}
-
 ul li {
   list-style: none;
 }
@@ -93,8 +89,8 @@ header {
   padding-top: var(--main-padding);
   text-transform: capitalize;
   font-family: var(--ff-ena);
+  font-size: 1.2rem;
   font-weight: 900;
-
 }
 
 aside {
@@ -106,12 +102,26 @@ aside {
   grid-area: sid;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  text-transform: capitalize;
-  font-family: var(--ff-ena);
-  font-size: 3rem;
-  font-weight: 800;
+  font-family: var(--ff-enc);
+
 
 }
+
+aside h1 {
+  align-self: first baseline;
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+aside h2 {
+  align-self: last baseline;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--en-k);
+}
+
+
 
 section {
   grid-area: sec;
@@ -121,8 +131,9 @@ section {
   align-items: center;
   grid-gap: 0;
   text-transform: capitalize;
-  font-family: var(--ff-ena);
+  font-family: var(--ff-enc);
   font-weight: 800;
+  font-size: 1.1rem;
   color: var(--en-k);
 }
 

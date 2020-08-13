@@ -94,6 +94,7 @@ header {
     border-radius: var(--main-radius);
     text-transform: capitalize;
     font-family: var(--ff-ena);
+    font-size: 1.2rem;
     font-weight: 900;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
     padding: 1rem;
@@ -227,7 +228,7 @@ textarea {
 }
 
 .fab {
-    color: var(--en-silver);
+    color: var(--en-k);
 }
 
 .fab:hover {
@@ -253,6 +254,8 @@ textarea {
         margin: 0 auto;
 
     }
+
+
 }
 
 @media only screen and (max-width: 450px) {
