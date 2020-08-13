@@ -91,11 +91,11 @@ header {
     grid-area: nav;
     background: var(--en-h);
     border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
     text-transform: capitalize;
-    font-size: 1.2rem;
     font-family: var(--ff-ena);
+    font-size: 1.2rem;
     font-weight: 900;
-
 }
 
 section {
@@ -106,9 +106,9 @@ section {
     align-items: center;
     grid-gap: 0;
     text-transform: capitalize;
-    font-size: 3rem;
-    font-family: var(--ff-ena);
+    font-family: var(--ff-enc);
     font-weight: 800;
+    font-size: 1.1rem;
     color: var(--en-k);
 }
 
@@ -197,10 +197,11 @@ ul li a:hover {
 @media only screen and (max-width: 560px) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.3fr 1fr 0.4fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 1fr 0.4fr;
         grid-template-areas:
             "hed"
             "nav"
+            "sec"
             "man"
             "fut";
         font-size: .8rem;
