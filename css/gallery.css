@@ -77,13 +77,14 @@ ul li {
     color: var(--en-txt);
     text-align: center;
 }
-
 header {
     background: var(--en-h);
     grid-area: hed;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
     font-family: var(--ff-en3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    padding: 1rem;
 
 }
 
@@ -91,11 +92,13 @@ header {
     grid-area: nav;
     background: var(--en-h);
     border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
     text-transform: capitalize;
     font-family: var(--ff-ena);
     font-size: 1.2rem;
     font-weight: 900;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+
 }
 
 section {
@@ -115,6 +118,10 @@ section {
 main {
     grid-area: man;
     border-radius: var(--main-radius);
+    background: var(--en-h);
+    padding-top: var(--main-padding);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    padding: 1rem;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -144,7 +151,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: var(--en-k);
+    color: var(--en-silver);
     text-transform: full-size-kana;
     text-decoration: underline;
 
@@ -176,16 +183,16 @@ ul li a:hover {
     font-size: .7rem;
     font-family: var(--ff-ena);
     font-weight: 800;
-    color: var(--en-txt);
+    color: var(--en-k);
     margin-bottom: var(--main-margin);
 }
 
 .fab {
-    color: var(--en-k);
+    color: var(--en-txt);
 }
 
 .fab:hover {
-    color: var(--en-txt);
+    color: var(--en-silver);
     text-decoration: underline;
 }
 

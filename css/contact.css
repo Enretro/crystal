@@ -140,7 +140,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: var(--en-k);
+    color: var(--en-silver);
     text-transform: full-size-kana;
     text-decoration: underline;
 
@@ -223,16 +223,16 @@ textarea {
     font-size: .7rem;
     font-family: var(--ff-ena);
     font-weight: 800;
-    color: var(--en-txt);
+    color: var(--en-k);
     margin-bottom: var(--main-margin);
 }
 
 .fab {
-    color: var(--en-k);
+    color: var(--en-txt);
 }
 
 .fab:hover {
-    color: var(--en-txt);
+    color: var(--en-silver);
     text-decoration: underline;
 }
 
