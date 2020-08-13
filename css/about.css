@@ -1,10 +1,8 @@
 :root {
-  --bg-lg01: linear-gradient(
-    to right,
-    rgba(76, 199, 237, 1) 10%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(76, 199, 237, 1) 100%
-  );
+  --bg-lg01: linear-gradient(to right,
+      rgba(76, 199, 237, 1) 10%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(76, 199, 237, 1) 100%);
 
   --en-light: #fff;
   --enr-dark: #000;
@@ -146,7 +144,7 @@ ul li a:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr 1fr 1fr;
-  grid-template-areas: "img" "txt" "sta";
+  grid-template-areas: "img""txt""sta";
   font-family: var(--ff-heading);
   font-weight: var(--fw-normal);
   line-height: 1.2;
@@ -173,14 +171,14 @@ ul li a:hover {
 }
 
 .b {
-  background: url("../img/about/kaj2.jpg");
+  background: url("../img/about/kaj3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .c {
-  background: url("../img/about/kaj3.jpg");
+  background: url("../img/about/kaj2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -192,12 +190,13 @@ ul li a:hover {
 }
 
 .card-txt .date {
-  color: var(--en-f);
+  color: var(--en-silver);
   font-size: 12px;
+  margin-bottom: var(--main-margin);
 }
 
 .card-txt p {
-  color: gray;
+  color: var(--en-k);
   font-size: 14px;
   font-weight: 300;
 }
