@@ -68,7 +68,7 @@ ul li {
   grid-gap: 1rem;
   padding: 1em;
   margin: var(--main-margin);
-  font-size: 1rem;
+  font-size: .8rem;
   color: var(--en-txt);
   text-align: center;
 }
@@ -127,6 +127,20 @@ aside h2 {
   color: var(--en-k);
 }
 
+aside h3 {
+  align-self: first baseline;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--en-k);
+}
+
+aside h4 {
+  align-self: last baseline;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--en-k);
+}
+
 
 
 section {
@@ -165,8 +179,9 @@ footer {
 ul {
   display: flex;
   grid-gap: 1.6rem;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+
 }
 
 ul li a {
