@@ -113,8 +113,6 @@ footer {
   padding-top: 1rem;
   border-radius: var(--main-radius);
   font-weight: 800;
-  text-transform: capitalize;
-  font-family: var(--en-a);
 }
 
 /* --- HEADER SECTION - CAROUSE --- */
@@ -145,7 +143,6 @@ ul li a:hover {
   grid-template-columns: 1fr;
   grid-template-rows: 3fr 1fr 1fr;
   grid-template-areas: "img""txt""sta";
-  font-family: var(--ff-heading);
   font-weight: var(--fw-normal);
   line-height: 1.2;
   border-radius: 16px;
