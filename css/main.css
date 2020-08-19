@@ -78,7 +78,6 @@ header {
   grid-area: hed;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  font-family: var(--ff-en3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   padding: 1rem;
 
@@ -91,7 +90,7 @@ header {
   text-transform: capitalize;
   font-family: var(--ff-ena);
   font-size: 1.2rem;
-  font-weight: 900;
+  font-weight: 700;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   padding: 1rem;
 
@@ -144,8 +143,8 @@ aside h4 {
 aside h5 {
   align-self: last baseline;
   font-size: 1rem;
-  font-weight: 400;
-  color: var(--en-tex);
+  font-weight: 600;
+
 }
 
 
@@ -159,7 +158,7 @@ section {
   grid-gap: 0;
   text-transform: capitalize;
   font-family: var(--ff-enc);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.1rem;
   color: var(--en-k);
 }
@@ -174,9 +173,9 @@ footer {
   grid-area: fut;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-  font-weight: 800;
+  font-weight: 700;
   text-transform: capitalize;
-  font-family: var(--en-a);
+  font-family: var(--ff-ena);
 }
 
 
@@ -248,7 +247,7 @@ ul li a:hover {
 
 .gallery-img a {
   font-family: var(--ff-en3);
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -264,9 +263,6 @@ ul li a:hover {
 
 .ft-legal {
   padding-top: 1.7rem;
-  font-size: .7rem;
-  font-family: var(--ff-ena);
-  font-weight: 800;
   color: var(--en-k);
   margin-bottom: var(--main-margin);
 }
