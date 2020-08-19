@@ -116,29 +116,36 @@ aside {
 aside h1 {
   align-self: first baseline;
   font-size: 1.7rem;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 aside h2 {
   align-self: last baseline;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--en-k);
 }
 
 aside h3 {
   align-self: first baseline;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--en-k);
 }
 
 aside h4 {
   align-self: last baseline;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--en-k);
+}
+
+aside h5 {
+  align-self: last baseline;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--en-tex);
 }
 
 

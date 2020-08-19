@@ -197,13 +197,16 @@ ul li a:hover {
 
 .card-txt p {
   color: var(--en-k);
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .card-txt h2 {
   margin-top: 0px;
-  font-size: 18px;
+  padding: .7rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+
 }
 
 .card-sta {
@@ -226,14 +229,14 @@ ul li a:hover {
 }
 
 .card-sta .type {
-  font-size: 11px;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .card-sta .value {
-  font-size: 18px;
-  font-weight: var(--fw-normal);
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 
 .card-sta .border {
