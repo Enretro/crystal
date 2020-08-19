@@ -50,62 +50,62 @@
             <li><a href="#">Kje</a></li>
         </ul>
         <div id="sidebar">
-            <iframe id="map"
+            <iframe id="map" class="responsive-iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11081.058253627752!2d15.470173619198453!3d46.02586956578242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765a31187f73497%3A0x2cd8e1d06503ff90!2sTitova%20cesta%20120%2C%208281%20Senovo!5e0!3m2!1sen!2ssi!4v1596989404869!5m2!1sen!2ssi"
-                width="auto" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                width="auto" height="" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
         </div>
 
-        <main id="form">
-            <form name="contact" method="POST" data-netlify="true" class="form">
-                <label class="field">
-                    Name:
-                    <input type="text" name="name" id="name" />
-                </label>
-                <label class="field">
-                    Email:
-                    <input type="email" name="email" id="long-field" />
-                </label>
+    <main id="form">
+        <form name="contact" method="POST" data-netlify="true" class="form">
+            <label class="field">
+                Ime:
+                <input type="text" name="name" id="name" />
+            </label>
+            <label class="field">
+                Epošta:
+                <input type="email" name="email" id="long-field" />
+            </label>
 
-                <label class="field">Role: <select name="role[]" multiple>
-                        <option value="leader">Leader</option>
-                        <option value="follower">Follower</option>
-                    </select>
-                </label>
+            <label class="field">Role: <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                </select>
+            </label>
 
-                <label class="field">
-                    PIŠITE NAM!
-                    <textarea name="message" id="textarea"></textarea>
-                </label>
+            <label class="field">
+                PIŠITE NAM!
+                <textarea name="message" id="textarea"></textarea>
+            </label>
 
-                <label class="field">
-                    <input type="file" name="myfile" id="myfile" placeholder="Upload File" />
-                </label>
+            <label class="field">
+                <input type="file" name="myfile" id="myfile" placeholder="Upload File" />
+            </label>
 
-                <label class="field">
-                    <div data-netlify-recaptcha="true"></div>
-                </label>
+            <label class="field">
+                <div data-netlify-recaptcha="true"></div>
+            </label>
 
-                <button type="submit">Pošlji</button>
-            </form>
-        </main>
-        <footer>
-            <!-- Footer social -->
-            <ul class="ft-social">
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
-                <li><a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-                <li><a href="https://github.com/Enretro/teaser" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                </li>
-                <li><a href="https://enretrue.blogspot.com/" target="_blank"><i class="fab fa-blogger fa-2x"></i></a>
-                </li>
-                <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
-            </ul>
-            <!-- Footer legal -->
-            <ul class="ft-legal">
-                <li>&copy;opyless 2020 by En OutInc.</li>
-            </ul>
-        </footer>
+            <button type="submit">Pošlji</button>
+        </form>
+    </main>
+    <footer>
+        <!-- Footer social -->
+        <ul class="ft-social">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a href="https://github.com/Enretro/teaser" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            </li>
+            <li><a href="https://enretrue.blogspot.com/" target="_blank"><i class="fab fa-blogger fa-2x"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
+        </ul>
+        <!-- Footer legal -->
+        <ul class="ft-legal">
+            <li>&copy;opyless 2020 by En OutInc.</li>
+        </ul>
+    </footer>
     </div>
 </body>
 

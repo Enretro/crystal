@@ -59,7 +59,7 @@ ul li {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.2fr 1.7fr 1.2fr 0.8fr;
+  grid-template-rows: .2fr .3fr .2fr .8fr;
   grid-template-areas:
     "hed nav nav nav"
     "sid sec sec sec"
@@ -179,7 +179,7 @@ footer {
 ul {
   display: flex;
   grid-gap: 1.6rem;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
 }
@@ -314,8 +314,8 @@ ul li a:hover {
 
 @media only screen and (max-width: 450px) {
   .container {
-    font-size: .7rem;
-    font-weight: 500;
+    font-size: .6rem;
+    font-weight: 400;
     margin: 0 auto;
   }
 
