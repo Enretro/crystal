@@ -57,16 +57,16 @@ ul li {
 /* --- GRID LAYOUT --- */
 .container {
   display: grid;
-  height: 100vh;
+  height: 90vh;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: .2fr .3fr .2fr .8fr;
+  grid-template-rows: .2fr .2fr auto .2fr;
   grid-template-areas:
     "hed nav nav nav"
     "sid sec sec sec"
     "sid man man man"
     "sid fut fut fut";
-  grid-gap: 1rem;
-  padding: 1em;
+  grid-gap: 1em;
+  padding: .7em;
   margin: var(--main-margin);
   font-size: .8rem;
   color: var(--en-txt);
@@ -79,7 +79,7 @@ header {
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-  padding: 1rem;
+  padding: 1em;
 
 }
 
@@ -92,7 +92,7 @@ header {
   font-size: 1.2rem;
   font-weight: 700;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-  padding: 1rem;
+  padding: 1em;
 
 }
 
@@ -101,15 +101,12 @@ aside {
   writing-mode: vertical-lr;
   justify-content: center;
   align-items: center;
-  background: var(--en-h);
   grid-area: sid;
   border-radius: var(--main-radius);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-  padding: 1rem;
+  padding: 1em;
   padding-top: var(--main-padding);
   font-family: var(--ff-enc);
-
-
 }
 
 aside h1 {
@@ -161,12 +158,18 @@ section {
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--en-k);
+  border-radius: var(--main-radius);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  padding: 1em;
 }
 
 main {
   grid-area: man;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  border-radius: var(--main-radius);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  padding: 1rem;
 }
 
 footer {
@@ -176,6 +179,9 @@ footer {
   font-weight: 700;
   text-transform: capitalize;
   font-family: var(--ff-ena);
+  border-radius: var(--main-radius);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  padding: 1em;
 }
 
 
@@ -213,7 +219,7 @@ ul li a:hover {
 
 #gallery .gallery-img {
   width: 100%;
-  height: 300px;
+  max-height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -262,7 +268,7 @@ ul li a:hover {
 /* Sticks footer to bottom */
 
 .ft-legal {
-  padding-top: 1.7rem;
+  padding-top: 1.5rem;
   color: var(--en-k);
   margin-bottom: var(--main-margin);
 }
@@ -284,7 +290,7 @@ ul li a:hover {
 @media only screen and (max-width: 560px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr auto minmax(600px, 1fr) auto .7fr;
+    grid-template-rows: 0.4fr 0.4fr auto minmax(500px, 1fr) auto .7fr;
     grid-template-areas:
       "hed"
       "nav"
