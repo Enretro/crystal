@@ -126,7 +126,7 @@ main {
     display: grid;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 
 footer {
@@ -162,15 +162,15 @@ ul li a:hover {
 
 .swiper-container {
     width: 100%;
-
+    padding: 1rem;
     padding-bottom: 70px;
 }
 
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    min-width: 250px;
+    height: 260px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
 }
 
