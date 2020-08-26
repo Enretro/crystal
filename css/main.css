@@ -76,6 +76,8 @@ ul li {
 header {
   background: var(--en-h);
   grid-area: hed;
+  display: grid;
+  place-self: center;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
