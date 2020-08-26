@@ -62,7 +62,7 @@ ul li {
 /* --- GRID LAYOUT --- */
 .container {
     display: grid;
-    height: 100vh;
+    height: 90vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: .2fr .3fr 1fr 0.4fr;
     grid-template-areas:
@@ -126,7 +126,6 @@ main {
     display: grid;
     justify-content: center;
     align-items: center;
-    min-height: 70vh;
 }
 
 footer {
@@ -169,8 +168,8 @@ ul li a:hover {
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    min-width: 250px;
-    height: 260px;
+    width: 250px;
+    height: 300px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
 }
 
